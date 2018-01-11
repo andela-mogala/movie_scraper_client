@@ -1,11 +1,11 @@
+<h3>Movie List</h3>
 {{#each model as |movie|}}
   <div>
-    <p>
-      Title {{movie.title}}
-    </p>
-    <p>
-      Description: {{movie.description}}
-    </p>
-    <img src={{movie.imageUrl}} alt="movie image"/>
+    {{#link-to 'movies.show' movie}}
+      <p>
+        Title {{movie.title}}
+      </p>
+      <img src={{movie.imageUrl}} alt="movie image"/>
+    {{/link-to}}
   </div>
 {{/each}}
