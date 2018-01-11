@@ -1,0 +1,11 @@
+{{#each model as |movie|}}
+  <div>
+    <p>
+      Title {{movie.title}}
+    </p>
+    <p>
+      Description: {{movie.description}}
+    </p>
+    <img src={{movie.imageUrl}} alt="movie image"/>
+  </div>
+{{/each}}
